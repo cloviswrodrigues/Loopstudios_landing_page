@@ -9,6 +9,31 @@ html {
   font-family: "Alata", sans-serif;
 }
 
+body {
+  background: url(../assets/desktop/image-hero.jpg) no-repeat;
+}
+
 li {
   list-style: none;
+}
+
+.container {
+  max-width: 144rem;
+  width: 77%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav ul {
+  display: flex;
+  gap: 3rem;
 }/*# sourceMappingURL=main.css.map */

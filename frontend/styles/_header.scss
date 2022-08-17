@@ -1,0 +1,16 @@
+.header {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    color: $color-white;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    &__nav ul {
+        display: flex;
+        gap: 3rem;
+    }
+}

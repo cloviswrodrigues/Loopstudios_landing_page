@@ -15,6 +15,16 @@ html {
     font-family: 'Alata', sans-serif;
 }
 
+body {
+    background: url(../assets/desktop/image-hero.jpg) no-repeat;
+}
+
 li {
     list-style: none;
+}
+
+.container {
+    max-width: 144rem;
+    width: 77%;
+    margin: 0 auto;
 }
