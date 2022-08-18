@@ -1,5 +1,4 @@
 .section-first {
-
     h1 {
         margin-top: 14rem;
         max-width: 65rem;
@@ -10,5 +9,42 @@
         font-size: 7.2rem;
         color: $color-white;
         text-transform: uppercase;
+    }
+}
+
+.section-second {
+    margin-top: 30rem;
+    display: flex;
+    align-items: flex-end;
+
+    &__img {
+        width: 700px;
+        max-width: 73.1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        max-width: 42rem;
+        background-color: $color-white;
+        padding: 6rem 0 0 6rem;
+        position: relative;
+        right: 16rem;
+
+        h2 {
+            font-family: Josefin Sans, sans-serif;
+            font-weight: 300;
+            font-size: 3.5rem;            
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: $color-very-dark-gray;
+            line-height: 2rem;
+        }
     }
 }

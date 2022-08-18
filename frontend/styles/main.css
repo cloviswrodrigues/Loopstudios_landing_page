@@ -48,4 +48,36 @@ li {
   font-size: 7.2rem;
   color: hsl(0deg, 0%, 100%);
   text-transform: uppercase;
+}
+
+.section-second {
+  margin-top: 30rem;
+  display: flex;
+  align-items: flex-end;
+}
+.section-second__img {
+  width: 700px;
+  max-width: 73.1rem;
+}
+.section-second__img img {
+  width: 100%;
+}
+.section-second__info {
+  max-width: 42rem;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 6rem 0 0 6rem;
+  position: relative;
+  right: 16rem;
+}
+.section-second__info h2 {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.section-second__info p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 41%);
+  line-height: 2rem;
 }/*# sourceMappingURL=main.css.map */
