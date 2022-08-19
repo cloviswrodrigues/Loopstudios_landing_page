@@ -17,6 +17,11 @@ li {
   list-style: none;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .container {
   max-width: 144rem;
   width: 77%;
@@ -80,4 +85,64 @@ li {
   font-size: 1.2rem;
   color: hsl(0deg, 0%, 41%);
   line-height: 2rem;
+}
+
+.section-third {
+  margin-top: 12rem;
+}
+.section-third__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0deg, 0%, 0%);
+  text-transform: uppercase;
+}
+.section-third__top h2 {
+  font-family: Josefin Sans, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.section-third__top a {
+  font-family: "Alata", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 0%);
+  text-decoration: none;
+  border: 1.5px solid hsl(0deg, 0%, 0%);
+  padding: 1rem 3rem;
+  letter-spacing: 0.3rem;
+}
+.section-third__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template: auto auto/repeat(4, 1fr);
+  gap: 2rem;
+}
+.section-third__grid--item {
+  position: relative;
+}
+.section-third__grid--item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.section-third__grid img {
+  width: 100%;
+  height: 100%;
+}
+.section-third__grid span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  padding: 2.8vw;
+  z-index: 2;
 }/*# sourceMappingURL=main.css.map */
