@@ -1,0 +1,44 @@
+.footer {
+    min-height: 20rem;
+    margin-top: 15rem;
+    background-color: $color-black;
+    padding: 4rem 0;
+    color: $color-white;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social {
+        
+        svg {
+            margin-left: 1.2rem;
+        }
+    }
+
+    &__bottom {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        font-size: 1.2rem;
+
+        ul {
+            display: flex;
+            gap: 3rem;
+        }
+    }
+
+    &__allrights {
+        font-size: 1.2rem;
+        color: $color-very-dark-gray;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 20px;
+    }
+}
