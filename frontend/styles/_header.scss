@@ -12,5 +12,23 @@
     &__nav ul {
         display: flex;
         gap: 3rem;
+
+        & li {            
+            position: relative;
+        }
+
+        & li:hover {
+
+            &::after {
+                content: '';
+                display: block;
+                background-color: $color-white;
+                width: 50%;
+                height: 2px;
+                position: absolute;
+                bottom: -10px;
+                transform: translateX(50%);
+            }
+        }
     }
 }
