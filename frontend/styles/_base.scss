@@ -3,6 +3,8 @@ $color-black: hsl(0, 0%, 0%);
 $color-dark-gray: hsl(0, 0%, 55%);
 $color-very-dark-gray: hsl(0, 0%, 41%);
 
+$break-mobile: 750px;
+
 
 * {
     margin: 0;
@@ -22,6 +24,11 @@ body {
     height: 100%;
     background: url(../assets/desktop/image-hero.jpg) no-repeat;
     background-size: contain;
+
+    @media screen and (max-width: $break-mobile) {        
+        background: url(../assets/mobile/image-hero.jpg) no-repeat;
+        background-size: cover;
+    }
 }
 
 li {
@@ -37,4 +44,8 @@ a {
     max-width: 144rem;
     width: 77%;
     margin: 0 auto;
+
+    @media screen and (max-width: $break-mobile) {
+        width: 85%;
+    }
 }

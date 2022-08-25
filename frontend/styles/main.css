@@ -17,6 +17,12 @@ body {
   background: url(../assets/desktop/image-hero.jpg) no-repeat;
   background-size: contain;
 }
+@media screen and (max-width: 750px) {
+  body {
+    background: url(../assets/mobile/image-hero.jpg) no-repeat;
+    background-size: cover;
+  }
+}
 
 li {
   list-style: none;
@@ -32,6 +38,11 @@ a {
   width: 77%;
   margin: 0 auto;
 }
+@media screen and (max-width: 750px) {
+  .container {
+    width: 85%;
+  }
+}
 
 .header {
   margin-top: 5rem;
@@ -42,6 +53,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .logo {
+  width: 180px;
+  height: 32px;
+}
+.header .logo svg {
+  width: 100%;
 }
 .header__nav ul {
   display: flex;
@@ -60,6 +78,17 @@ a {
   bottom: -10px;
   transform: translateX(50%);
 }
+.header__menu--hamburguer {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .header__menu--hamburguer {
+    display: block;
+  }
+  .header__nav ul {
+    display: none;
+  }
+}
 
 .section-first h1 {
   margin-top: 14rem;
@@ -71,6 +100,12 @@ a {
   font-size: 7.2rem;
   color: hsl(0deg, 0%, 100%);
   text-transform: uppercase;
+}
+@media screen and (max-width: 750px) {
+  .section-first h1 {
+    margin-top: 20rem;
+    font-size: 4rem;
+  }
 }
 
 .section-second {

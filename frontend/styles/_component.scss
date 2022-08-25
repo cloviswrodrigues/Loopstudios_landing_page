@@ -10,6 +10,13 @@
         color: $color-white;
         text-transform: uppercase;
     }
+
+    @media screen and (max-width: $break-mobile) {
+        h1 {
+            margin-top: 20rem;
+            font-size: 4rem;
+        }
+    }
 }
 
 .section-second {

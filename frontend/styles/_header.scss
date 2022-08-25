@@ -8,6 +8,14 @@
         justify-content: space-between;
         align-items: center;        
     }
+    
+    .logo {
+        width: 180px;
+        height: 32px;
+        svg {
+            width: 100%;
+        }
+    }
 
     &__nav ul {
         display: flex;
@@ -29,6 +37,23 @@
                 bottom: -10px;
                 transform: translateX(50%);
             }
+        }
+    }
+
+    &__menu--hamburguer {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-mobile) { 
+        &__menu--hamburguer {
+            display: block;
+        }
+    
+        &__nav ul {
+            display: none;
+        }
+
+        .logo {
         }
     }
 }
