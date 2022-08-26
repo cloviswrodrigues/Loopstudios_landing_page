@@ -156,4 +156,41 @@
             z-index: 2;
         }
     }
+
+    @media screen and (max-width: $break-mobile) {        
+        margin-top: 10rem;
+        position: relative;
+        padding-bottom: 7rem;
+
+        &__top {
+            justify-content: center;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            a {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        &__grid {
+            grid-template: auto / 1fr;
+
+            &--item {
+                position: relative;   
+                
+                &::after {
+                    background: $color-black;
+                    background: linear-gradient(90deg, rgba($color-black,0.5) 30%, rgba(255,255,255,0) 100%);
+                }
+            }
+
+            span {
+                font-size: 2.2rem;
+                padding: 2rem;
+            }
+        }
+    }
 }
