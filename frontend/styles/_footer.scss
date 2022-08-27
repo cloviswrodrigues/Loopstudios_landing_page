@@ -1,42 +1,24 @@
 .footer {
-    min-height: 20rem;
     margin-top: 15rem;
     background-color: $color-black;
     padding: 4rem 0;
     color: $color-white;
     position: relative;
 
-    &__top {
+    .wrapper {
         display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
-    &__social {
-
-        a {            
-            display: inline-block;
-            position: relative;
-            margin-left: 1.2rem;
-
-            &:hover {
-
-                &::after {
-                    content: '';
-                    display: block;
-                    background-color: $color-white;
-                    width: 100%;
-                    height: 2px;
-                    position: absolute;
-                    bottom: -8px;
-                }
-            }            
-        }
-    }
-
-    &__bottom {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: space-between;
+    &__logo {
+        width: 150px;
     }
 
     &__nav {
@@ -66,6 +48,36 @@
         }
     }
 
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+
+        a {            
+            display: inline-block;
+            position: relative;
+            margin-left: 1.2rem;
+
+            &:hover {
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: $color-white;
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -8px;
+                }
+            }            
+        }
+    }
+
     &__allrights {
         font-size: 1.2rem;
         color: $color-very-dark-gray;
@@ -78,7 +90,11 @@
         text-align: right;
         
         a {
-            color: hsl(207deg 87% 66%);
+            color: hsl(207deg,87%,66%);
         }
+    }
+
+    @media screen and (max-width: $break-mobile) {
+
     }
 }
