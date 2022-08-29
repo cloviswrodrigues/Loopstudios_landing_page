@@ -12,6 +12,8 @@
     .logo {
         width: 180px;
         height: 32px;
+        z-index: 1;
+
         svg {
             width: 100%;
         }
@@ -40,20 +42,47 @@
         }
     }
 
-    &__menu--hamburguer {
+    &__menu--hamburguer, .icon-close {
         display: none;
-    }
+    }    
 
     @media screen and (max-width: $break-mobile) { 
         &__menu--hamburguer {
             display: block;
+        }
+
+        .icon-close {
+            position: relative;
+            z-index: 1;
         }
     
         &__nav ul {
             display: none;
         }
 
-        .logo {
+        .menu-open {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            background-color: $color-black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 22rem 3.5rem;
+            z-index: 0;
+
+            li {
+                display: inline;
+                font-family: Josefin Sans, sans-serif;
+                font-size: 2.6rem;
+                text-transform: uppercase;
+
+                &::after {
+                    transform: inherit !important;
+                }
+            }
         }
     }
 }
