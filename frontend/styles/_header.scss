@@ -19,15 +19,15 @@
         }
     }
 
-    &__nav ul {
+    &__menu {
         display: flex;
         gap: 3rem;
 
-        & li {            
+        li {            
             position: relative;
         }
 
-        & li:hover {
+        li:hover {
 
             &::after {
                 content: '';
@@ -42,12 +42,23 @@
         }
     }
 
-    &__menu--hamburguer, .icon-close {
+    .icon-hamburger, .icon-close {
         display: none;
     }    
 
-    @media screen and (max-width: $break-mobile) { 
-        &__menu--hamburguer {
+    .active {
+        display: block;
+    }
+
+    .disabled {
+        display: none;
+    }
+
+
+
+    @media screen and (max-width: $break-mobile) {
+
+        .icon-hamburger {
             display: block;
         }
 
@@ -56,14 +67,15 @@
             z-index: 1;
         }
     
-        &__nav ul {
+        &__menu {
             display: none;
         }
 
-        .menu-open {
+        &__menu ul {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            gap: 2rem;
             width: 100%;
             height: 100%;
             background-color: $color-black;

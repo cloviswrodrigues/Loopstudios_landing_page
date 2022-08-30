@@ -62,14 +62,14 @@ a {
 .header .logo svg {
   width: 100%;
 }
-.header__nav ul {
+.header__menu {
   display: flex;
   gap: 3rem;
 }
-.header__nav ul li {
+.header__menu li {
   position: relative;
 }
-.header__nav ul li:hover::after {
+.header__menu li:hover::after {
   content: "";
   display: block;
   background-color: hsl(0deg, 0%, 100%);
@@ -79,24 +79,31 @@ a {
   bottom: -10px;
   transform: translateX(50%);
 }
-.header__menu--hamburguer, .header .icon-close {
+.header .icon-hamburger, .header .icon-close {
+  display: none;
+}
+.header .active {
+  display: block;
+}
+.header .disabled {
   display: none;
 }
 @media screen and (max-width: 750px) {
-  .header__menu--hamburguer {
+  .header .icon-hamburger {
     display: block;
   }
   .header .icon-close {
     position: relative;
     z-index: 1;
   }
-  .header__nav ul {
+  .header__menu {
     display: none;
   }
-  .header .menu-open {
+  .header__menu ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
     width: 100%;
     height: 100%;
     background-color: hsl(0deg, 0%, 0%);
@@ -106,13 +113,13 @@ a {
     padding: 22rem 3.5rem;
     z-index: 0;
   }
-  .header .menu-open li {
+  .header__menu ul li {
     display: inline;
     font-family: Josefin Sans, sans-serif;
     font-size: 2.6rem;
     text-transform: uppercase;
   }
-  .header .menu-open li::after {
+  .header__menu ul li::after {
     transform: inherit !important;
   }
 }
