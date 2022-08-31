@@ -20,29 +20,37 @@
     }
 
     &__menu {
-        display: flex;
-        gap: 3rem;
 
-        li {            
-            position: relative;
+        &--toggle {
+            display: flex;
         }
+    
+    
+        ul {
+            display: flex;
+            gap: 3rem;
 
-        li:hover {
+            li {            
+                position: relative;
+            }
 
-            &::after {
-                content: '';
-                display: block;
-                background-color: $color-white;
-                width: 50%;
-                height: 2px;
-                position: absolute;
-                bottom: -10px;
-                transform: translateX(50%);
+            li:hover {
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: $color-white;
+                    width: 50%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -10px;
+                    transform: translateX(50%);
+                }
             }
         }
     }
 
-    .icon-hamburger, .icon-close {
+    .icon-hamburguer, .icon-close {
         display: none;
     }    
 
@@ -58,7 +66,7 @@
 
     @media screen and (max-width: $break-mobile) {
 
-        .icon-hamburger {
+        .icon-hamburguer {
             display: block;
         }
 
