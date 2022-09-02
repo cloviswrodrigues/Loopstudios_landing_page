@@ -1,6 +1,7 @@
-.section-first {
+.section-first {    
+    margin-top: 10vw;
+
     h1 {
-        margin-top: 14rem;
         max-width: 65rem;
         border: 1px solid $color-white;
         padding: 3rem;
@@ -13,8 +14,9 @@
 
     @media screen and (max-width: $break-mobile) {
         h1 {
+            max-width: 380px;
             margin-top: 20rem;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
 }
